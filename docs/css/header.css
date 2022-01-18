@@ -17,6 +17,13 @@ header {
         height: 80px;
     }
 }
+#menubar_react {
+    display: flex;
+    /* background-color: darkred; */ /*отладочная заливка */
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
 .menubar_back { /*обертка для менюбара*/
     display: flex;
     /* background-color: darkred; */ /*отладочная заливка */
