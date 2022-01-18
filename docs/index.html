@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- <base target="_blank"> -->
+    <title>PANOFF TRAVEL Login</title>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+    <style>
+        @import url(css/header.css);
+        @import url(css/footer.css);
+        @import url(css/waterfall.css);
+        @import url(css/login.css);
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div id="menubar_back"></div>
+        </header>
+        <div class="screen_1">
+            <div class="pillar">
+                <section class="waterfall">
+                    <div class="waterfall_back">
+                        <div class="visible_area">
+                            <div class="pictures">
+                                <div class="pic_one">
+                                    <div class="first_pic"></div>
+                                    <div class="first_pic"></div>
+                                    <div class="first_pic"></div>
+                                    <div class="first_pic"></div>
+                                    <div class="first_pic"></div>
+                                </div>
+                                <div class="pic_two">
+                                    <div class="second_pic"></div>
+                                    <div class="second_pic"></div>
+                                    <div class="second_pic"></div>
+                                    <div class="second_pic"></div>
+                                    <div class="second_pic"></div>
+                                </div>
+                                <div class="pic_three">
+                                    <div class="third_pic"></div>
+                                    <div class="third_pic"></div>
+                                    <div class="third_pic"></div>
+                                    <div class="third_pic"></div>
+                                    <div class="third_pic"></div>
+                                </div>
+                                <div class="pic_four">
+                                    <div class="fourth_pic"></div>
+                                    <div class="fourth_pic"></div>
+                                    <div class="fourth_pic"></div>
+                                    <div class="fourth_pic"></div>
+                                    <div class="fourth_pic"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="login">
+                    <h2>Давайте узнаем друг друга поближе!</h2>
+                    <div class="form">
+                        <p>Логин</p>
+                        <input placeholder="Придумайте логин" tabindex="1" name="username" type="text" />
+                    </div>
+                    <div class="form"> 
+				    <p>Пароль</p>
+				    <input placeholder="Придумайте пароль" tabindex="2" name="userpass" type="password" />
+			        </div>
+                    <div class="form">
+                        <p>Электронная почта</p>
+                        <input placeholder="Введите e-mail" tabindex="3" name="email" type="tel" />
+                    </div>
+                    <div class="form">
+                        <p>Контрольный вопрос:</p>
+                        <select  tabindex="10" name="question">
+                            <option value="blank"></option>
+                            <option value="dog">Кличка вашей собаки</option>
+                            <option value="who">Кто я?</option>
+                            <option value="why">Зачем я здесь?</option>
+                            <option value="where">Где мое место в этом мире?</option>
+                        </select>
+                    </div >
+                    <div class="form">
+                        <p>Ответ на контрольный вопрос:</p>
+                        <textarea placeholder="Введите ответ" cols="50" rows="3" tabindex="8" name="answer"></textarea>
+                    </div>
+                    <div class="form">
+                        <p>Ваши увлечения:</p>
+                        <div>
+                            <input tabindex="5" type="checkbox" name="travel" value="yes" />Путешествия
+                        </div>
+                        <div>
+                            <input tabindex="6" type="checkbox" name="computers" value="yes" /> IT
+                        </div>
+                        <div>
+                            <input tabindex="7" type="checkbox" name="games" value="yes" /> Игры
+                        </div>
+                        <div>
+                            <input tabindex="7" type="checkbox" name="food" value="yes" /> Кулинария
+                        </div>
+                    </div>
+                    <div class="form">
+                        <p>Дополнительная информация:</p>
+                        <textarea placeholder="Расскажите о себе" cols="50" rows="7" tabindex="8" name="about"></textarea>
+                    </div>
+                    <div class="form">
+                        <p>Фото для профиля</p>
+                        <input tabindex="9" type="file" />
+                    </div>
+                    <div class="form">
+                        <p>Действия</p>
+                        <button tabindex="11" type="submit">Отправить</button>
+                        <button tabindex="12" type="reset">Очистить</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div id="footer_react">
+                <div class="f_logo">
+                    <div class="f_logo_1">P</div>
+                    <div class="f_logo_2">L</div>
+                </div>
+                <ul class="f_about_us foot">
+                    <li class="f_list">About Us</li>
+                    <li class="f_point"><a href="#hello" target="_self">Hello</a></li>
+                    <li class="f_point">2</li>
+                    <li class="f_point">3</li>
+                    <li class="f_point">Контакты</li>
+                </ul>
+                <ul class="f_articles foot">
+                    <li class="f_list">Articles</li>
+                    <li class="f_point"><a href="#baical" target="_self">БАЙКАЛ</a></li>
+                    <li class="f_point"><a href="#altay" target="_self">АЛТАЙ</a></li>
+                    <li class="f_point">Кавказ</li>
+                </ul>
+                <ul class="f_friends foot">
+                    <li class="f_list">Friends</li>
+                    <li class="f_point"><a href="http://www.moto-travels.ru/" target="_blank">M-Travels</a></li>
+                    <li class="f_point"><a href="http://transalp-club.ru" target="_blank">TA-Club</a></li>
+                    <li class="f_point"><a href="http://www.africatwin.ru" target="_blank">AT-Club</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+    <script type="text/babel" src="js/menu.js"></script>
+</body>
+
+</html>

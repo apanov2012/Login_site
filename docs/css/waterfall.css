@@ -1,0 +1,329 @@
+/*свойства CSS для водопада*/
+
+.waterfall
+{
+    display: flex;
+    height: 39vw;
+    min-height: 276px;
+    max-height: 670px;
+    width: 60vw;
+    min-width: 497px;
+    max-width: 1000px;
+    /* background-color: lightgrey; */
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.waterfall_back {
+    display: block;
+    height: 800px;
+    max-width: 1800px;
+}
+.visible_area {
+    display: flex;
+    height: 38vw;
+    min-height: 270px;
+    max-height: 654px;
+    width: 59vw;
+    min-width: 492px;
+    max-width: 995px;
+    background-color: lightgrey;
+    position: absolute;
+    overflow: hidden;
+    border: 4px double white;
+    border-radius: 20px;
+}
+.pictures /*фоновый блок для блоков с сменяющимися фонами*/
+{
+    display: flex;
+    width: 1920px;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 0;
+    padding: 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.pic_one, .pic_two, .pic_three, .pic_four /*фоновые блоки для каждого из сменяющихся фонов*/
+{
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: 0 0;
+    padding: 0 0;
+}
+.first_pic /*класс для блоков с первым меняющимся фоном*/
+{
+    display: flex;
+    position: absolute;
+    height: 100vw;
+    width: 20vw;
+    background-color: blue;
+    z-index: 0;
+    animation-name: pic1;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: -100vw;
+    background-size: contain;
+    
+}
+.first_pic:nth-of-type(1)
+{
+    background-image: url(../images/waterfall/First_pic_1_1.jpg);
+}
+.first_pic:nth-of-type(2)
+{
+    background-image: url(../images/waterfall/First_pic_1_2.jpg);
+    animation-delay: 0.5s;
+    left: 20vw;
+}
+.first_pic:nth-of-type(3)
+{
+    background-image: url(../images/waterfall/First_pic_1_3.jpg);
+    animation-delay: 1s;
+    left: 40vw;
+}
+.first_pic:nth-of-type(4)
+{
+    background-image: url(../images/waterfall/First_pic_1_4.jpg);
+    animation-delay: 1.5s;
+    left: 60vw;
+}
+.first_pic:nth-of-type(5)
+{
+    background-image: url(../images/waterfall/First_pic_1_5.jpg);
+    animation-delay: 2s;
+    left: 80vw;
+}
+
+
+.second_pic, .third_pic, .fourth_pic
+{
+    display: flex;
+    height: 100vw;
+    width: 20vw;
+    position: absolute;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: -100vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.second_pic /*класс для блоков с вторым меняющимся фоном*/
+{
+    animation-name: pic2;
+    animation-delay: 10s;
+}
+.third_pic /*класс для блоков с третьим меняющимся фоном*/
+{
+    animation-name: pic3;
+    animation-delay: 20s;
+}
+.fourth_pic /*класс для блоков с четвертым меняющимся фоном*/
+{
+    animation-name: pic4;
+    animation-delay: 30s;
+}
+.second_pic:nth-of-type(1)
+{
+    background-image: url(../images/waterfall/Second_pic_1_1.jpg);
+    animation-delay: 9.915s;
+}
+.second_pic:nth-of-type(2)
+{
+    background-image: url(../images/waterfall/Second_pic_1_2.jpg);
+    left: 20vw;
+    animation-delay: 10.435s;
+}
+.second_pic:nth-of-type(3)
+{
+    background-image: url(../images/waterfall/Second_pic_1_3.jpg);
+    left: 40vw;
+    animation-delay: 10.93s;
+}
+.second_pic:nth-of-type(4)
+{
+    background-image: url(../images/waterfall/Second_pic_1_4.jpg);
+    left: 60vw;
+    animation-delay: 11.43s;
+}
+.second_pic:nth-of-type(5)
+{
+    background-image: url(../images/waterfall/Second_pic_1_5.jpg);
+    left: 80vw;
+    animation-delay: 11.93s;
+}
+.third_pic:nth-of-type(1)
+{
+    background-image: url(../images/waterfall/Third_pic_1_1.jpg);
+    animation-delay: 19.84s;
+}
+.third_pic:nth-of-type(2)
+{
+    background-image: url(../images/waterfall/Third_pic_1_2.jpg);
+    left:20vw;
+    animation-delay: 20.34s;
+}
+.third_pic:nth-of-type(3)
+{
+    background-image: url(../images/waterfall/Third_pic_1_3.jpg);
+    left: 40vw;
+    animation-delay: 20.84s;
+}
+.third_pic:nth-of-type(4)
+{
+    background-image: url(../images/waterfall/Third_pic_1_4.jpg);
+    left: 60vw;
+    animation-delay: 21.34s;
+}
+.third_pic:nth-of-type(5)
+{
+    background-image: url(../images/waterfall/Third_pic_1_5.jpg);
+    left: 80vw;
+    animation-delay: 21.84s;
+}
+.fourth_pic:nth-of-type(1)
+{
+    background-image: url(../images/waterfall/Fourth_pic_1_1.jpg);
+    animation-delay: 29.75s;
+}
+.fourth_pic:nth-of-type(2)
+{
+    background-image: url(../images/waterfall/Fourth_pic_1_2.jpg);
+    left: 20vw;
+    animation-delay: 30.25s;
+}
+.fourth_pic:nth-of-type(3)
+{
+    background-image: url(../images/waterfall/Fourth_pic_1_3.jpg);
+    left: 40vw;
+    animation-delay: 30.75s;
+}
+.fourth_pic:nth-of-type(4)
+{
+    background-image: url(../images/waterfall/Fourth_pic_1_4.jpg);
+    left: 60vw;
+    animation-delay: 31.25s;
+}
+.fourth_pic:nth-of-type(5)
+{
+    background-image: url(../images/waterfall/Fourth_pic_1_5.jpg);
+    left: 80vw;
+    animation-delay: 31.75s;
+}
+@keyframes pic1 /*анимация для первого фона*/
+{
+    from
+    {
+        top: -1200px;
+        opacity: 0.7;
+    }
+    5%
+    {
+        top: 0;
+        opacity: 1;
+    }
+    25%
+    {
+        top: 0;
+        opacity: 1;
+    }
+    30%
+    {
+        top: 800px;
+        opacity: 0.5;
+    }
+    to
+    {
+        top: 800px;
+        opacity: 0;
+    }
+}
+@keyframes pic2 /*анимация для второго фона*/
+{
+    from 
+    {
+        top: -800px;
+        opacity: 0;
+    }
+
+    5% {
+        top: 0;
+        opacity: 1;
+    }
+
+    25% {
+        top: 0;
+        opacity: 1;
+    }
+
+    30% {
+        top: 800px;
+        opacity: 0;
+    }
+
+    to {
+        top: 800px;
+        opacity: 0;
+    }
+}
+@keyframes pic3 /*анимация для третьего фона*/
+{
+    from
+    {
+        top: -800px;
+        opacity: 0;
+    }
+    5%
+    {
+        top: 0;
+        opacity: 1;
+    }
+    25%
+    {
+        top: 0;
+        opacity: 1;
+    }
+    30%
+    {
+        top: 800px;
+        opacity: 0;
+    }
+    to
+    {
+        top: 800px;
+        opacity: 0;
+    }
+}
+@keyframes pic4 /*анимация для четвертого фона*/
+{
+    from
+    {
+        top: -800px;
+        opacity: 0;
+    }
+    5%
+    {
+        top: 0;
+        opacity: 1;
+    }
+    26%
+    {
+        top: 0;
+        opacity: 1;
+    }
+    31%
+    {
+        top: 1200px;
+        opacity: 0;
+    }
+    to
+    {
+        top: 800px;
+        opacity: 0;
+    }
+}
