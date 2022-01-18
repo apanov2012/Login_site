@@ -16,17 +16,17 @@ ReactDOM.render(
                     <li className="button">ABOUT US
                         <ul className="but_drop_list">
                             <li className="menu_but hidden"></li>
-                            <li className="menu_but first"><a href="#hello" target="_self">HELLO</a></li>
-                            <li className="menu_but"><a href="#bikes" target="_self">OUR BIKES</a></li>
+                            <li className="menu_but first"><a href="https://apanov2012.github.io/project/#hello" target="_self">HELLO</a></li>
+                            <li className="menu_but"><a href="https://apanov2012.github.io/project/#bikes" target="_self">OUR BIKES</a></li>
                             <li className="menu_but">BLANK</li>
-                            <li className="menu_but">CONTACTS</li>
+                            <li className="menu_but"><a href="https://apanov2012.github.io/Contact_site/" target="_self">CONTACTS</a></li>
                         </ul>
                     </li>
                     <li className="button">ARTICLES
                         <ul className="but_drop_list">
                             <li className="menu_but hidden"></li>
-                            <li className="menu_but"><a href="#baical" target="_self">БАЙКАЛ</a></li>
-                            <li className="menu_but"><a href="#altay" target="_self">АЛТАЙ</a></li>
+                            <li className="menu_but"><a href="https://apanov2012.github.io/project/#baical" target="_self">БАЙКАЛ</a></li>
+                            <li className="menu_but"><a href="https://apanov2012.github.io/project/#altay" target="_self">АЛТАЙ</a></li>
                             <li className="menu_but">КАВКАЗ</li>
                         </ul>
                     </li>
